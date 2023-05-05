@@ -1,0 +1,157 @@
+:root {
+     --bg-color: rgb(199, 199, 208);
+     --text-black: rgb(0, 0, 0);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     display: flex;
+     flex-direction: column;
+     font-family: 'Roboto', sans-serif;
+     margin: auto;
+}
+
+/* Navbar */
+
+nav {
+     padding: 0 20px;
+     justify-content: space-between;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     height: 110px;
+     background-color: var(--bg-color);
+     flex-wrap: wrap;
+     align-content: space-around;
+}
+
+.logo a {
+     color: var(--text-black);
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-weight: 700;
+}
+
+.nav-list li {
+     display: inline-block;
+     margin: 10px 5px;
+}
+
+.nav-list li a {
+     text-decoration: none;
+     color: var(--text-black);
+     padding: 10px;
+     border-radius: 10px;
+}
+
+.nav-list li a:hover {
+     background: var(--text-black);
+     box-shadow: 0 0 10px 0 var(--text-black);
+     color: white;
+}
+
+.active {
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.541);
+}
+
+/* Main */
+
+.container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+     border-radius: 20px;
+}
+
+h1{
+     margin-bottom: 10px;
+}
+.question-area {
+     padding: 10px;
+}
+
+.question {
+     margin: 20px;
+     display: flex;
+     flex-direction: column;
+}
+
+label {
+     margin: 10px;
+}
+
+input[type="radio"] {
+     margin-left: 30px;
+     margin-right: 5px;
+}
+
+#result-text {
+     margin: 20px;
+     font-size: 1.5rem;
+     font-weight: 700;
+}
+
+.btn {
+     width: 200px;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 10px;
+     background: var(--text-black);
+     color: white;
+     font-weight: 700;
+     border: none;
+     cursor: pointer;
+}
+
+.btn:hover {
+     box-shadow: 0 0 10px 0 var(--text-black);
+}
+
+.hide {
+     display: none;
+}
+
+
+/* Footer */
+.social-button {
+     padding: 5px;
+}
+
+.social img:hover {
+     padding: 5px;
+     border-radius: 50%;
+     box-shadow: 0 0 10px 0 var(--text-black);
+}
+
+.social img {
+     width: 30px;
+}
+
+.devloper a {
+     text-decoration: none;
+     color: var(--text-black);
+}
+
+
+footer {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+     padding-top: 20px;
+     padding-bottom: 10px;
+     background-color: var(--bg-color);
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     position: sticky;
+     top: 100%;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+:root {
+     --primary-color: red;
+     --secondary-color: blue;
+     --font-family: 'Rubik Microbe', cursive;
+}
+
+body {
+     font-family: var(--font-family)
+}
+
+h1 {
+     color: var(--primary-color);
+}
+
+h2 {
+     color: var(--secondary-color);
+}
+
+#primaryBTN {
+     color: var(--primary-color);
+     font-family: var(--font-family)
+}
+
+#secondaryBTN {
+     color: var(--secondary-color);
+     font-family: var(--font-family)
+}

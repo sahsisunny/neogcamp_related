@@ -1,0 +1,12 @@
+{
+     "userDetails": [
+          {
+               "name": "Sunny",
+               "score": 5
+          },
+          {
+               "name": "Ajit",
+               "score": 3
+          }
+     ]
+}

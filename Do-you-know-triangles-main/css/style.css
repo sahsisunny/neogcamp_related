@@ -1,0 +1,169 @@
+:root {
+     --bg-color: rgb(199, 199, 208);
+     --text-black: rgb(0, 0, 0);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+     padding: 0 20px;
+     justify-content: space-between;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     height: 110px;
+     background-color: var(--bg-color);
+     flex-wrap: wrap;
+     align-content: space-around;
+}
+
+
+
+.logo a {
+     color: var(--text-black);
+     text-decoration: none;
+     font-size: 1.5rem;
+     font-weight: 700;
+}
+
+
+.nav-list li {
+     display: inline-block;
+     margin: 10px 5px;
+}
+
+.nav-list li a {
+     text-decoration: none;
+     color: var(--text-black);
+     padding: 10px;
+     border-radius: 10px;
+}
+
+.nav-list li a:hover {
+     background: var(--text-black);
+     box-shadow: 0 0 10px 0 var(--text-black);
+     color: white;
+}
+
+.active {
+     box-shadow: 0 0 10px 0 var(--text-black);
+}
+
+/* Main */
+
+.container {
+     /* background-color: var(--bg-color); */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     border-radius: 20px;
+     height: 60vh;
+     padding: 10px;
+}
+
+h1 {
+     margin-bottom: 10px;
+}
+.input-area,
+.output-area {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+}
+
+input[type="number"] {
+     width: 300px;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 10px;
+     outline: none;
+     box-shadow: 0 0 10px 0 var(--text-black);
+     border: none;
+     text-align: center;
+}
+
+input[type="radio"] {
+     margin: 10px;
+}
+
+span {
+     color: red;
+}
+#result-text {
+     margin: 20px;
+     font-size: 1.5rem;
+     font-weight: 700;
+}
+.btn {
+     width: 200px;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 10px;
+     background: var(--text-black);
+     color: white;
+     font-weight: 700;
+     border: none;
+     cursor: pointer;
+}
+
+.btn:hover {
+     box-shadow: 0 0 10px 0 var(--text-black);
+}
+
+.hide {
+     display: none;
+}
+
+
+/* Footer */
+.social-button {
+     padding: 5px;
+}
+
+.social img:hover {
+     padding: 5px;
+     border-radius: 50%;
+     box-shadow: 0 0 10px 0 var(--text-black);
+}
+
+.social img {
+     width: 30px;
+}
+
+.devloper a {
+     text-decoration: none;
+     color: var(--text-black);
+}
+
+
+footer {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     width: auto;
+     padding-top: 20px;
+     padding-bottom: 10px;
+     background-color: var(--bg-color);
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}

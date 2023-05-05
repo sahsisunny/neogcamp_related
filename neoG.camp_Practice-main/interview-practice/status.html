@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <h1 id="sample-q1">Sample Q1</h1>
+     <h2
+          id="create-a-web-app-which-would-take-two-inputs-it-would-also-have-4-buttons-x-based-on-the-button-clicked-perform-the-operation-on-the-two-inputs-you-can-do-this-in-react-or-vanillajs-based-on-your-choice-">
+          Create a web app which would take two inputs. It would also have 4 buttons: +, -, x /. Based on the button
+          clicked
+          perform the operation on the two inputs. You can do this in React or vanillaJS based on your choice.</h2>
+     <h3 id="in-vanilajs">In VanilaJS</h3>
+     <h4 id="html-code">HTML Code</h4>
+     <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+     
+     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Sample Q1<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+     
+     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"num1"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter 1st Number"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"num2"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter 2nd Number"</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"addition"</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"subtraction"</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"multiply"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"division"</span>&gt;</span>/<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"result"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+     
+          <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./script.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+     
+     <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+     </code></pre>
+
+     <h4 id="js-code">JS Code</h4>
+     <pre><code class="lang-js"><span class="hljs-keyword">const</span> num1 = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"num1"</span>);
+     <span class="hljs-keyword">const</span> num2 = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"num2"</span>);
+     
+     <span class="hljs-keyword">const</span> addBTN = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#addition"</span>);
+     <span class="hljs-keyword">const</span> subBTN = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#subtraction"</span>);
+     <span class="hljs-keyword">const</span> multiBTN = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#multiply"</span>);
+     <span class="hljs-keyword">const</span> divBTN = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#division"</span>);
+     
+     <span class="hljs-keyword">const</span> result = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">"#result"</span>);
+     
+     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">const</span> number1 = <span class="hljs-built_in">Number</span>(num1.value);
+          <span class="hljs-keyword">const</span> number2 = <span class="hljs-built_in">Number</span>(num2.value);
+     }
+     
+     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">const</span> number1 = <span class="hljs-built_in">Number</span>(num1.value);
+          <span class="hljs-keyword">const</span> number2 = <span class="hljs-built_in">Number</span>(num2.value);
+          result.innerHTML = number1 + number2;
+     }
+     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sub</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">const</span> number1 = <span class="hljs-built_in">Number</span>(num1.value);
+          <span class="hljs-keyword">const</span> number2 = <span class="hljs-built_in">Number</span>(num2.value);
+          result.innerHTML = number1 - number2;
+     }
+     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">multi</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">const</span> number1 = <span class="hljs-built_in">Number</span>(num1.value);
+          <span class="hljs-keyword">const</span> number2 = <span class="hljs-built_in">Number</span>(num2.value);
+          result.innerHTML = number1 * number2;
+     }
+     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">div</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">const</span> number1 = <span class="hljs-built_in">Number</span>(num1.value);
+          <span class="hljs-keyword">const</span> number2 = <span class="hljs-built_in">Number</span>(num2.value);
+          result.innerHTML = number1 / number2;
+     }
+     
+     addBTN.addEventListener(<span class="hljs-string">'click'</span>, add)
+     subBTN.addEventListener(<span class="hljs-string">'click'</span>, sub)
+     multiBTN.addEventListener(<span class="hljs-string">'click'</span>, multi)
+     divBTN.addEventListener(<span class="hljs-string">'click'</span>, div)
+     </code></pre>
+
+</body>
+
+</html>

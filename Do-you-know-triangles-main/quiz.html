@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Quiz </title>
+     <link rel="stylesheet" href="/css/quiz-style.css">
+</head>
+
+<body>
+     <!-- navbar -->
+     <nav>
+          <div class="logo">
+               <a href="#">Do You Know Triangle📐?</a>
+          </div>
+
+          <div class="uList">
+               <ul class="nav-list">
+                    <li class="nav-item "><a href="index.html">is Triangle?</a></li>
+                    <li class="nav-item"><a class="active" href="quiz.html">Quiz</a></li>
+                    <li class="nav-item"><a href="./hypotenuse.html">Hypotenuse</a></li>
+                    <li class="nav-item"><a href="area.html">Area</a></li>
+               </ul>
+          </div>
+     </nav>
+
+     <!-- main -->
+     <div class="container">
+          <h1>Quiz</h1>
+          <p>For each question, select the best answer. If you are not sure, select the answer you think is best.</p>
+          <form class="question-area">
+               <div class="question">
+                    <h4>Q1. What is the sum of all the angles of a triangle?</h4>
+                    <label for="option1"><input type="radio" name="q1" id="option1" value="180">180°</label>
+                    <label for="option2"><input type="radio" name="q1" id="option2" value="90">90°</label>
+                    <label for="option3"><input type="radio" name="q1" id="option3" value="60">60°</label>
+                    <label for="option4"><input type="radio" name="q1" id="option4" value="30">30°</label>
+               </div>
+               <div class="question">
+                    <h3>Q2. If the sum of the angles of a triangle is 180°, then the triangle is a</h3>
+                    <label for="option1"><input type="radio" name="q2" id="option1" value="acute"> acute
+                         triangle</label>
+                    <label for="option2"><input type="radio" name="q2" id="option2" value="right"> right
+                         triangle</label>
+                    <label for="option3"><input type="radio" name="q2" id="option3" value="obtuse"> obtuse
+                         triangle</label>
+                    <label for="option4"><input type="radio" name="q2" id="option4" value="equilateral"> equilateral
+                         triangle</label>
+               </div>
+               <div class="question">
+                    <h3>Q3. Two angles of a triangle are 60° and 80°. The third angle is</h3>
+                    <label for="option1"><input type="radio" name="q3" id="option1" value="40">40°</label>
+                    <label for="option2"><input type="radio" name="q3" id="option2" value="20">20°</label>
+                    <label for="option3"><input type="radio" name="q3" id="option3" value="60">60°</label>
+                    <label for="option4"><input type="radio" name="q3" id="option4" value="80">80°</label>
+               </div>
+               <div class="question">
+                    <h3>Q4. What is the sum of the angles of a scalene triangle?</h3>
+                    <label for="option1"><input type="radio" name="q4" id="option1" value="180">180°</label>
+                    <label for="option2"><input type="radio" name="q4" id="option2" value="90">90°</label>
+                    <label for="option3"><input type="radio" name="q4" id="option3" value="60">60°</label>
+                    <label for="option4"><input type="radio" name="q4" id="option4" value="30">30°</label>
+               </div>
+               <div class="question">
+                    <h3>Q5. If angles of a triangle are in the ratio 3:4:5, then the triangle is</h3>
+                    <label for="option1"><input type="radio" name="q5" id="option1" value="acute"> acute
+                         triangle</label>
+                    <label for="option2"><input type="radio" name="q5" id="option2" value="right"> right
+                         triangle</label>
+                    <label for="option3"><input type="radio" name="q5" id="option3" value="obtuse"> obtuse
+                         triangle</label>
+                    <label for="option4"><input type="radio" name="q5" id="option4" value="equilateral"> equilateral
+                         triangle</label>
+               </div>
+          </form>
+          <button type="submit" class="btn-reset btn" id="check">Check</button>
+          <div class="show hide">
+               <div class="output-area">
+                    <p id="result-text"></p>
+                    <button type="button" class="btn-reset btn" id="back">Back</button>
+               </div>
+          </div>
+     </div>
+
+
+     <!-- footer -->
+     <footer>
+          <div class="devloper">
+               <p><a href="#">© 2022 Sunny Sahsi</a></p>
+          </div>
+          <div class="social">
+               <a class="social-button " href="https://discord.com/users/6779" role="button"><img
+                         src="https://img.icons8.com/fluent/48/000000/discord.png" alt="discord"></a>
+               <a class="social-button " href="https://twitter.com/sahsisunny" role="button"><img
+                         src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="twitter"></a>
+               <a class="social-button " href="https://github.com/sahsisunny" role="button"><img
+                         src="https://img.icons8.com/fluent/48/000000/github.png" alt="github"></a>
+               <a class="social-button " href="https://www.linkedin.com/in/sahsisunny" role="button"><img
+                         src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="linkedin"></a>
+          </div>
+     </footer>
+     <script src="/js/quiz.js"></script>
+</body>
+
+</html>

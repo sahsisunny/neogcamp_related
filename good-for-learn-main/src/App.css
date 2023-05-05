@@ -1,0 +1,131 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh;
+  font-family: 'Kanit', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+button {
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+}
+
+button:hover {
+  box-shadow: 0 2px 8px black;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+
+.list-item-name {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.list-item-links {
+  margin: .5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.uList a {
+  text-decoration: none;
+  color: #1800ef;
+  margin: 0 1rem;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.uList a:hover {
+  color: #000000;
+  box-shadow: 0 2px 8px black;
+  border-radius: 5px;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.list-item{
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.uList{
+  padding: 10px;
+}
+
+/* Footer */
+
+.footer-section {
+  width: 100%;
+  color: black;
+  text-align: center;
+  position: sticky;
+  top: 95%;
+}
+
+.footer-section a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
